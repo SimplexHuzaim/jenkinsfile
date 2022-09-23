@@ -5,7 +5,9 @@ pipeline {
             steps {
                 sh 'ls'
                 sh 'php --version'
-                sh 'sudo php artisan serve --host 172.31.26.247 --port 8000'
+                sh 'sudo su -'
+                sh 'node --version'
+                sh 'php artisan serve --host 172.31.26.247 --port 8000'
             }
         }
     }
